@@ -7,8 +7,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   software and technology. More importantly about the human side of programming.
 logo: 'assets/images/Logo.png'
 favicon: 'assets/images/favicon.png'
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://savingprivatedeveloper.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/saving-private-developer" # the subpath of your site, e.g. /blog
+url: "https://gauravrane2212.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: me_grane
 github_username:  gauravrane2212
 
