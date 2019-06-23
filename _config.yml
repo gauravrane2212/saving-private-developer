@@ -1,0 +1,60 @@
+# Site
+name: Saving Private Developer
+title: Saving Private Developer
+email: gaurav.v.rane@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Saving Private Developer. Gaurav Rane's weekly blog about programming, debugging, hacking, 
+  software and technology. More importantly about the human side of programming.
+logo: 'assets/images/Logo.png'
+favicon: 'assets/images/favicon.png'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: me_grane
+github_username:  gauravrane2212
+
+# Build settings
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  
+authors:
+    gaurav:
+      name:           Gaurav Rane
+      site:           https://www.wowthemes.net
+      avatar:         assets/images/avatar.png
+      bio:            "Hi, I am Gaurav, the maintainer of this blog. Professionally, I work as a mobile app developer in New York. Apart from being a developer, I enjoy cooking, watching movies (clearly from my site name) and playing PS4 action-adventure games. I hope to be a better programmer by learning, writing and sharing new weekly blog posts on this site."
+      email:          gaurav.v.rane@gmail.com
+      twitter:        https://twitter.com/me_grane
+ 
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: gaurav
+      avatar: /assets/images/avatar.png
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
