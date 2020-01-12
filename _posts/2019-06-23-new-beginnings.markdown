@@ -2,7 +2,6 @@
 layout: post
 title:  "New Beginnings!"
 categories: [general]
-image: assets/images/new-beginnings.jpg
 ---
 After years of hesitation and procrastination, I am finally determined to start my own blog. Don’t get me wrong, it’s not like I `haven’t` blogged before. However, after a few weeks of blogging, I wouldn't have the same enthusiasm as when I started and eventually give up.  I would give lame excuses like `Oh, I simply don’t have the time today`, `I don’t know what should I blog about?`, `Have I done enough research about the topic at hand?`, `What if I write something stupid, incorrect and readers start hating me or judging me for what a noob developer I am?`. Once I would go past these doubts and come to terms with myself, I would have already gone ahead with other things in life. This would make me hate the very idea of writing a new blog post and go through this depressing feeling again. :(
 

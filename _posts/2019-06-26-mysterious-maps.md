@@ -2,7 +2,6 @@
 layout: post
 title:  "Mysterious Maps in Javascript"
 categories: [javascript]
-image: assets/images/mystery-map.jpg
 ---
 I always wondered why data structures like Map (Dictionary) and Set weren’t baked into Javascript from the early days much like Arrays. Coming from a Java or a Objective-C world, I wished I wouldn’t need to implement these data structures on my own every time I wanted to use one. It isn't bad for Maps since up until this point, I would just use the Object literal syntax `{}` to create new key-value pairs whenever needed. However with ES6, we got an extensive list of feature updates including new collection types like `Map, Set, WeakMap and WeakSet`. So the question is why would one use a Map collection type when we already have the built-in Object literals?
 
@@ -25,9 +24,9 @@ Researching further into this, I found some key differences between Maps and Obj
 <ins>**Prototype Inheritance**</ins>
 
 Literal objects in Javascript inherits properties from its built-in prototype.
-This can lead to false positives if we check for the existence of a key that resembles a prototypal property. 
+This can lead to false positives if we check for the existence of a key that resembles a prototypal property.
 
-To resolve this situation, we can check the built-in `hasOwnProperty` method of the Object which can indicate if the property is a direct property. 
+To resolve this situation, we can check the built-in `hasOwnProperty` method of the Object which can indicate if the property is a direct property.
 
 {% highlight javascript %}
 employee.hasOwnProperty(‘name‘); // returns true
@@ -70,7 +69,7 @@ Map has a built-in iterable while objects do not. You can use a `for...of` loop 
 {% highlight javascript %}
 // iterate over keys
 for (let employee of employee.keys()) {
-  console.log(employee); // Sarah, Gaurav, John 
+  console.log(employee); // Sarah, Gaurav, John
 }
 
 // iterate over values
@@ -79,7 +78,7 @@ for (let salary of employeeSalaries.values()) {
 }
 
 // iterate over [key, value] entries
-for (let entry of employee) 
+for (let entry of employee)
   console.log(entry); // Sarah, 50000 (so on)
 }
 
@@ -123,13 +122,13 @@ map.set(‘foo‘, ‘bar‘).set(‘xyz‘, ‘abc‘).set(‘pqr‘, ‘lmn‘
 
 Also `NaN` can be used a valid key in Maps
 
---- 
+---
 
 ### Conclusion
 
 Generally use Maps where a lot of addition and deletion of key-value pairs is involved. (I won’t go in detail about this but basically Javascript engines have to recompile cached object classes when frequent additions and deletions are made. Check this [Stack Overflow][object-deletion-expensive] answer for further reading)
 
-Maps seem to also perform better for very large key-value pairs, situations where keys are unknown until runtime and where the data types of the keys and values are of the same. Object literals tend to perform better for write once read many situations with string keys. 
+Maps seem to also perform better for very large key-value pairs, situations where keys are unknown until runtime and where the data types of the keys and values are of the same. Object literals tend to perform better for write once read many situations with string keys.
 
 ---
 
