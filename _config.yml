@@ -10,7 +10,6 @@ title:            Saving Private Developer
 tagline:          'Saving Private Developer'
 description:      "Gaurav Rane's weekly blog about programming, debugging, hacking, software and technology."
 url:              https://www.savingprivatedeveloper.com/
-baseurl:          /
 
 author:
   name:           'Gaurav Rane'
@@ -24,3 +23,4 @@ version:          1.0.0
 
 github:
   repo:           https://github.com/gauravrane2212/saving-private-developer
+  root:           /
